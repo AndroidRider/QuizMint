@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/backgroundColor"
+    tools:context=".Fragment.SpinFragment">
+
+    <LinearLayout
+        android:id="@+id/llv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="8dp"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profileImage"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/img_logo"
+            app:civ_border_color="@color/civ_border_color"
+            app:civ_border_width="2dp" />
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/poppins_bold"
+            android:text="My Name"
+            android:textColor="@color/textColor"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/iconCoinWithdrawal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_coin" />
+
+        <TextView
+            android:id="@+id/textCoinWithdrawal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_bold"
+            android:paddingStart="2dp"
+            android:paddingTop="2dp"
+            android:text="0"
+            android:textColor="@color/textColorCoin"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:fontFamily="@font/poppins_regular"
+            android:text="Left Spin Chance : "
+            android:textColor="@color/textColor"
+            android:textStyle="bold"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/spinChance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:fontFamily="@font/poppins_bold"
+            android:text="1"
+            android:textColor="@color/textColor"
+            android:textSize="20sp"/>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginTop="20dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+<!--**************************** Spin Wheel ****************************-->
+            <ImageView
+                android:id="@+id/rotationWheel"
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:src="@drawable/img_spinner_wheel"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/img_spinner_circle"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+
+<!--    <com.google.android.material.button.MaterialButton-->
+<!--        android:id="@+id/btnSpin"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginHorizontal="100dp"-->
+<!--        android:layout_marginTop="80dp"-->
+<!--        android:background="@drawable/shape_button"-->
+<!--        app:backgroundTint="@color/buttonColor"-->
+<!--        android:fontFamily="@font/poppins_regular"-->
+<!--        android:textColor="@color/textColorLogoutButton"-->
+<!--        android:text="Spin"-->
+<!--        android:textAllCaps="false"-->
+<!--        android:textSize="20sp" />-->
+
+    <Button
+        android:id="@+id/btnSpin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="100dp"
+        android:layout_marginTop="80dp"
+        app:backgroundTint="@color/buttonColor"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/buttonTextColor"
+        android:text="Spin"
+        android:textAllCaps="false"/>
+
+
+</LinearLayout>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/backgroundColor"
+    android:orientation="vertical"
+    tools:context=".Fragment.WithdrawalFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:fontFamily="@font/poppins_extrabold"
+            android:gravity="center"
+            android:text="Withdrawal Money"
+            android:textColor="@color/textColor"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:fontFamily="@font/poppins_bold"
+                android:gravity="center"
+                android:text="Total Coin :"
+                android:textColor="@color/textColor"/>
+
+            <TextView
+                android:id="@+id/tvTotalCoin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:fontFamily="@font/poppins_extrabold"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="@color/textColorCoin"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:fontFamily="@font/poppins_bold"
+            android:gravity="center"
+            android:text="1000 Coin = Rs 10"
+            android:textColor="@color/textColor"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:fontFamily="@font/poppins_bold"
+            android:gravity="center"
+            android:text="Minimum 60 Rs | Maximum 100 Rs"
+            android:textColor="@color/textColor"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/edtAmount"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/shape_edit_text"
+            android:fontFamily="@font/poppins_regular"
+            android:hint="Enter amount"
+            android:paddingStart="15dp" />
+
+        <EditText
+            android:id="@+id/edtUpiId"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/shape_edit_text"
+            android:fontFamily="@font/poppins_regular"
+            android:hint="Enter paytm number"
+            android:paddingStart="15dp" />
+
+    </LinearLayout>
+
+
+<!--    <com.google.android.material.button.MaterialButton-->
+<!--        android:id="@+id/btnTransferAmount"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginHorizontal="50dp"-->
+<!--        android:layout_marginVertical="20dp"-->
+<!--        android:background="@drawable/shape_button"-->
+<!--        app:backgroundTint="@color/buttonColor"-->
+<!--        android:fontFamily="@font/poppins_regular"-->
+<!--        android:textSize="18sp"-->
+<!--        android:textStyle="bold"-->
+<!--        android:textColor="@color/buttonTextColor"-->
+<!--        android:text="Transfer Amount"-->
+<!--        android:textAllCaps="false"/>-->
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnTransferAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="20dp"
+        android:paddingHorizontal="15dp"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        app:backgroundTint="@color/buttonColor"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="18sp"
+        android:textColor="@color/buttonTextColor"
+        android:text="Transfer Amount"
+        android:textAllCaps="false"/>
+
+
+
+</LinearLayout>

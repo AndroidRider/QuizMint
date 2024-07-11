@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">QuizMint</string>
+
+
+    <string-array name="filter_options">
+        <item>All</item>
+        <item>Wins</item>
+        <item>Withdrawals</item>
+    </string-array>
+
+</resources>

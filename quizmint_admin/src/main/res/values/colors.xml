@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="red">#D50000</color>
+    <color name="green">#00C853</color>
+
+    <color name="mainColor">#26A69A</color>
+
+    <color name="dashboard_button_bg">#FFFFFF</color>
+    <color name="viewColor">#ff9e9e9e</color>
+
+    <color name="toolbarColor">@color/mainColor</color>
+
+    <!--    Button Color-->
+    <color name="buttonColor">#3D5AFE</color>
+
+    <!--    Text Color-->
+    <color name="textColor">#000000</color>
+
+    <color name="textColorSplash">#FFFFFFFF</color>
+    <color name="textColorHomeRecyclerSubject">#000000</color>
+    <color name="textColorHistoryRecyclerSubject">#000000</color>
+    <color name="textColorLogoutButton">#FFFFFFFF</color>
+
+    <!--    StatusBar Color-->
+    <color name="statusBarColor">#D50000</color>
+
+    <color name="redColor">#FF0000</color>
+    <color name="greenColor">#00FF00</color>
+    <color name="default_option_color">#FFFFFFFF</color>
+</resources>

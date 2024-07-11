@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "856331570052",
+    "firebase_url": "https://quizmint-191a3-default-rtdb.firebaseio.com",
+    "project_id": "quizmint-191a3",
+    "storage_bucket": "quizmint-191a3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:856331570052:android:224090ca485d4644fdebd1",
+        "android_client_info": {
+          "package_name": "com.androidrider.quizmint"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBjIh7uOPPDqRi98nEG1l65S55BW-P3S_E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:856331570052:android:24d52cfa2219a4dafdebd1",
+        "android_client_info": {
+          "package_name": "com.androidrider.quizmint_admin"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBjIh7uOPPDqRi98nEG1l65S55BW-P3S_E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
