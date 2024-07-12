@@ -152,6 +152,7 @@ class HistoryFragment : Fragment() {
                     if (snapshot.exists()){
                         var currentCoin=snapshot.getValue() as Long
                         binding.textCoinWithdrawal.text=currentCoin.toString()
+
                     }
                 }
                 override fun onCancelled(error: DatabaseError) {}
@@ -175,14 +176,17 @@ class HistoryFragment : Fragment() {
             .addListenerForSingleValueEvent(
                 object : ValueEventListener {
                     override fun onDataChange(snapshot: DataSnapshot) {
-
                         var user = snapshot.getValue(UserModel::class.java)
-
                         binding.tvName.text = user?.name
 
-                        if (user?.profileImageUrl != null) {
-                            Glide.with(requireContext()).load(user.profileImageUrl)
+                        if (user?.profileImageUrl != null && user.profileImageUrl.isNotEmpty()) {
+                            // If profile image URL exists, load it using Glide
+                            Glide.with(this@HistoryFragment)
+                                .load(user.profileImageUrl)
                                 .into(binding.profileImage)
+                        } else {
+                            // If profile image URL is blank or null, set a placeholder or default image
+                            binding.profileImage.setImageResource(R.drawable.img_male)
                         }
 
                     }

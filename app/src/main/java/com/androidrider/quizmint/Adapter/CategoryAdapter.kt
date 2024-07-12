@@ -7,15 +7,15 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.androidrider.quizmint.Model.SubjectModel
 import com.androidrider.quizmint.Activity.PlayScreen
-import com.androidrider.quizmint.databinding.SubjectItemBinding
+import com.androidrider.quizmint.databinding.CategoryItemBinding
 import com.bumptech.glide.Glide
 
-class SubjectAdapter(private val context: Context, private var subjectList: List<SubjectModel>) :
-    RecyclerView.Adapter<SubjectAdapter.SubjectViewHolder>() {
+class CategoryAdapter(private val context: Context, private var subjectList: List<SubjectModel>) :
+    RecyclerView.Adapter<CategoryAdapter.SubjectViewHolder>() {
 
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): SubjectViewHolder {
-        val binding = SubjectItemBinding.inflate(LayoutInflater.from(parent.context), parent, false)
+        val binding = CategoryItemBinding.inflate(LayoutInflater.from(parent.context), parent, false)
         return SubjectViewHolder(binding)
     }
 
@@ -25,7 +25,7 @@ class SubjectAdapter(private val context: Context, private var subjectList: List
 
     override fun getItemCount() = subjectList.size
 
-    inner class SubjectViewHolder(private val binding: SubjectItemBinding) : RecyclerView.ViewHolder(binding.root) {
+    inner class SubjectViewHolder(private val binding: CategoryItemBinding) : RecyclerView.ViewHolder(binding.root) {
         fun bind(subject: SubjectModel) {
             binding.categoryName.text = subject.subject
             Glide.with(context).load(subject.img).into(binding.subjectImage)

@@ -67,14 +67,13 @@
 
         <Button
             android:id="@+id/btnSignIn"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginHorizontal="100dp"
             android:layout_marginTop="24dp"
+            android:layout_gravity="center_horizontal"
             android:backgroundTint="@color/buttonColor"
             android:fontFamily="@font/poppins_regular"
             android:textSize="18sp"
-            android:textStyle="bold"
             android:textColor="@color/buttonTextColor"
             android:text="Sign In"
             android:textAllCaps="false" />

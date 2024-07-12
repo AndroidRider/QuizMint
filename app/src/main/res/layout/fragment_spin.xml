@@ -69,20 +69,19 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:fontFamily="@font/poppins_regular"
-            android:text="Left Spin Chance : "
+            android:text="Spin Chance : "
             android:textColor="@color/textColor"
-            android:textStyle="bold"
-            android:textSize="20sp"/>
+            android:textSize="18sp"/>
 
         <TextView
             android:id="@+id/spinChance"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:fontFamily="@font/poppins_bold"
+            android:fontFamily="@font/poppins_regular"
             android:text="1"
             android:textColor="@color/textColor"
-            android:textSize="20sp"/>
+            android:textSize="18sp"/>
 
     </LinearLayout>
 
@@ -142,14 +141,13 @@
 
     <Button
         android:id="@+id/btnSpin"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginHorizontal="100dp"
         android:layout_marginTop="80dp"
+        android:layout_gravity="center_horizontal"
         app:backgroundTint="@color/buttonColor"
         android:fontFamily="@font/poppins_regular"
         android:textSize="18sp"
-        android:textStyle="bold"
         android:textColor="@color/buttonTextColor"
         android:text="Spin"
         android:textAllCaps="false"/>

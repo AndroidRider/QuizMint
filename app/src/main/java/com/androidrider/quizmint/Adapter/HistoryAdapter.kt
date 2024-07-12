@@ -47,7 +47,6 @@ class HistoryAdapter(private var historyList:ArrayList<HistoryModel>):
         val calendar = Calendar.getInstance()
         calendar.time = date
 
-        val currentCalendar = Calendar.getInstance()
 
         val formattedDate = when {
             DateUtils.isToday(calendar.timeInMillis) -> {

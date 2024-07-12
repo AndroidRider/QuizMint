@@ -143,6 +143,16 @@ dialog.dismiss()
             bottomSheetDialog.show(requireActivity().supportFragmentManager, "TEST")
             bottomSheetDialog.enterTransition
         }
+        binding.llWithdrawal.setOnClickListener {
+            val bottomSheetDialog = WithdrawalFragment()
+            bottomSheetDialog.show(requireActivity().supportFragmentManager, "TEST")
+            bottomSheetDialog.enterTransition
+        }
+        binding.rightArrow.setOnClickListener {
+            val bottomSheetDialog = WithdrawalFragment()
+            bottomSheetDialog.show(requireActivity().supportFragmentManager, "TEST")
+            bottomSheetDialog.enterTransition
+        }
     }
 
     private fun showSpinChance() {

@@ -123,7 +123,7 @@ class SpinFragment : Fragment() {
             Firebase.database.reference.child("PlayerCoin").child(Firebase.auth.currentUser!!.uid)
                 .setValue(winCoin+currentCoin)
 
-            var historyModel= HistoryModel(winCoin.toString(),System.currentTimeMillis().toString() ,false)
+            var historyModel= HistoryModel(winCoin.toString(), "", System.currentTimeMillis().toString() ,false)
             Firebase.database.reference.child("PlayerCoinHistory").child(Firebase.auth.currentUser!!.uid)
                 .push().setValue(historyModel)
 
@@ -143,14 +143,17 @@ class SpinFragment : Fragment() {
             .addListenerForSingleValueEvent(
                 object : ValueEventListener {
                     override fun onDataChange(snapshot: DataSnapshot) {
-
                         var user = snapshot.getValue(UserModel::class.java)
-
                         binding.tvName.text = user?.name
 
-                        if (user?.profileImageUrl != null) {
-                            Glide.with(requireContext()).load(user.profileImageUrl)
+                        if (user?.profileImageUrl != null && user.profileImageUrl.isNotEmpty()) {
+                            // If profile image URL exists, load it using Glide
+                            Glide.with(this@SpinFragment)
+                                .load(user.profileImageUrl)
                                 .into(binding.profileImage)
+                        } else {
+                            // If profile image URL is blank or null, set a placeholder or default image
+                            binding.profileImage.setImageResource(R.drawable.img_male)
                         }
 
                     }

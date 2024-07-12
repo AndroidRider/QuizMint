@@ -9,8 +9,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.appcompat.widget.SearchView
 import androidx.recyclerview.widget.GridLayoutManager
-import com.androidrider.quizmint.Activity.PaymentSuccessActivity
-import com.androidrider.quizmint.Adapter.SubjectAdapter
+import com.androidrider.quizmint.Adapter.CategoryAdapter
 import com.androidrider.quizmint.Model.SubjectModel
 import com.androidrider.quizmint.Model.UserModel
 import com.androidrider.quizmint.R
@@ -31,18 +30,13 @@ class HomeFragment : Fragment() {
     private lateinit var dialog : Dialog
 
     private var categoryList = ArrayList<SubjectModel>()
-    private lateinit var subjectAdapter: SubjectAdapter
+    private lateinit var categoryAdapter: CategoryAdapter
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?): View? {
         // Inflate the layout for this fragment
         binding = FragmentHomeBinding.inflate(inflater, container,false)
-
-
-        binding.llv.setOnClickListener {
-            startActivity(Intent(requireContext(), PaymentSuccessActivity::class.java))
-        }
 
 
         setupRecyclerView()
@@ -121,7 +115,7 @@ class HomeFragment : Fragment() {
                         categoryList.add(data)
                     }
                 }
-                subjectAdapter.updateList(categoryList)
+                categoryAdapter.updateList(categoryList)
                 dialog.dismiss()
             }
     }
@@ -133,14 +127,17 @@ class HomeFragment : Fragment() {
             .addListenerForSingleValueEvent(
                 object : ValueEventListener {
                     override fun onDataChange(snapshot: DataSnapshot) {
-
                         var user = snapshot.getValue(UserModel::class.java)
-
                         binding.tvName.text = user?.name
 
-                        if (user?.profileImageUrl != null) {
-                            Glide.with(requireContext()).load(user.profileImageUrl)
+                        if (user?.profileImageUrl != null && user.profileImageUrl.isNotEmpty()) {
+                            // If profile image URL exists, load it using Glide
+                            Glide.with(this@HomeFragment)
+                                .load(user.profileImageUrl)
                                 .into(binding.profileImage)
+                        } else {
+                            // If profile image URL is blank or null, set a placeholder or default image
+                            binding.profileImage.setImageResource(R.drawable.img_male)
                         }
 
                     }
@@ -153,8 +150,8 @@ class HomeFragment : Fragment() {
 
     private fun setupRecyclerView() {
         binding.recyclerView.layoutManager = GridLayoutManager(requireContext(), 2)
-        subjectAdapter = SubjectAdapter(requireContext(), categoryList)
-        binding.recyclerView.adapter = subjectAdapter
+        categoryAdapter = CategoryAdapter(requireContext(), categoryList)
+        binding.recyclerView.adapter = categoryAdapter
         binding.recyclerView.setHasFixedSize(true)
     }
 
@@ -178,7 +175,7 @@ class HomeFragment : Fragment() {
         val filteredList = categoryList.filter {
             it.subject!!.contains(query, ignoreCase = true)
         }
-        subjectAdapter.updateList(filteredList)
+        categoryAdapter.updateList(filteredList)
     }
 
 

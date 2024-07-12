@@ -5,15 +5,23 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="@color/backgroundColor"
     android:orientation="vertical"
+    android:background="@drawable/bottom_sheet_dialog_background"
     tools:context=".Fragment.WithdrawalFragment">
+
+    <View
+        android:layout_width="50dp"
+        android:layout_height="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal"
+        android:background="#8FCFCECE"/>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:orientation="vertical">
+
 
         <TextView
             android:layout_width="match_parent"
@@ -34,7 +42,6 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="4dp"
                 android:fontFamily="@font/poppins_bold"
                 android:gravity="center"
                 android:text="Total Coin :"
@@ -44,31 +51,58 @@
                 android:id="@+id/tvTotalCoin"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="4dp"
-                android:fontFamily="@font/poppins_extrabold"
+                android:layout_marginStart="4dp"
+                android:fontFamily="@font/poppins_bold"
                 android:gravity="center"
                 android:text="0"
                 android:textColor="@color/textColorCoin"
                 android:textSize="18sp" />
         </LinearLayout>
 
-        <TextView
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="4dp"
-            android:fontFamily="@font/poppins_bold"
             android:gravity="center"
-            android:text="1000 Coin = Rs 10"
-            android:textColor="@color/textColor"/>
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_bold"
+                android:gravity="center"
+                android:text="Total Amount :"
+                android:textColor="@color/textColor"/>
+
+            <TextView
+                android:id="@+id/tvTotalAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:fontFamily="@font/poppins_bold"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="@color/historyGreenColor"
+                android:textSize="18sp" />
+        </LinearLayout>
+
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="4dp"
-            android:fontFamily="@font/poppins_bold"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/poppins_regular"
             android:gravity="center"
-            android:text="Minimum 60 Rs | Maximum 100 Rs"
-            android:textColor="@color/textColor"/>
+            android:text="Note: 1000 Coin = 10 Rs."
+            android:textColor="#FFAB00"/>
+
+<!--        <TextView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_margin="4dp"-->
+<!--            android:fontFamily="@font/poppins_bold"-->
+<!--            android:gravity="center"-->
+<!--            android:text="Minimum 60 Rs | Maximum 100 Rs"-->
+<!--            android:textColor="@color/textColor"/>-->
 
 
     </LinearLayout>
@@ -76,7 +110,6 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
         android:orientation="vertical">
 
         <EditText
@@ -84,7 +117,6 @@
             android:layout_width="match_parent"
             android:layout_height="48dp"
             android:layout_marginHorizontal="16dp"
-            android:layout_marginTop="15dp"
             android:background="@drawable/shape_edit_text"
             android:fontFamily="@font/poppins_regular"
             android:hint="Enter amount"
@@ -98,7 +130,7 @@
             android:layout_marginTop="15dp"
             android:background="@drawable/shape_edit_text"
             android:fontFamily="@font/poppins_regular"
-            android:hint="Enter paytm number"
+            android:hint="Enter UPI number"
             android:paddingStart="15dp" />
 
     </LinearLayout>
@@ -119,12 +151,13 @@
 <!--        android:text="Transfer Amount"-->
 <!--        android:textAllCaps="false"/>-->
 
+
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btnTransferAmount"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginVertical="20dp"
-        android:paddingHorizontal="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="40dp"
         android:gravity="center"
         android:layout_gravity="center_horizontal"
         app:backgroundTint="@color/buttonColor"

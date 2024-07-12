@@ -153,16 +153,27 @@ class PlayScreen : AppCompatActivity() {
 
     private fun actionOptionButton() {
         binding.optionA.setOnClickListener {
-            nextQuestionAndScoreUpdate(binding.optionA.text.toString(), binding.optionA)
+            if (!isOptionSelected) {
+                nextQuestionAndScoreUpdate(binding.optionA.text.toString(), binding.optionA)
+            }
         }
         binding.optionB.setOnClickListener {
-            nextQuestionAndScoreUpdate(binding.optionB.text.toString(), binding.optionB)
+
+            if (!isOptionSelected) {
+                nextQuestionAndScoreUpdate(binding.optionB.text.toString(), binding.optionB)
+            }
         }
         binding.optionC.setOnClickListener {
-            nextQuestionAndScoreUpdate(binding.optionC.text.toString(), binding.optionC)
+
+            if (!isOptionSelected) {
+                nextQuestionAndScoreUpdate(binding.optionC.text.toString(), binding.optionC)
+            }
         }
         binding.optionD.setOnClickListener {
-            nextQuestionAndScoreUpdate(binding.optionD.text.toString(), binding.optionD)
+
+            if (!isOptionSelected) {
+                nextQuestionAndScoreUpdate(binding.optionD.text.toString(), binding.optionD)
+            }
         }
     }
 

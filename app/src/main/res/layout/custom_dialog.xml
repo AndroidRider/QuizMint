@@ -21,7 +21,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Payment Successful!"
-        android:textColor="@color/greenDarkColor"
+        android:textColor="@color/greenColor"
         android:textSize="24sp"
         android:textStyle="bold" />
 
@@ -31,8 +31,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:text="00"
-        android:textColor="@color/greenDarkColor"
-        android:textSize="18sp"
+        android:textColor="@color/greenColor"
+        android:textSize="16sp"
         android:textStyle="bold" />
 
     <Button
@@ -44,7 +44,6 @@
         app:backgroundTint="@color/buttonColor"
         android:fontFamily="@font/poppins_regular"
         android:textSize="18sp"
-        android:textStyle="bold"
         android:textColor="@color/buttonTextColor"
         android:text="OK"
         android:textAllCaps="false"/>

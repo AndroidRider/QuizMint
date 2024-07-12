@@ -65,57 +65,57 @@
 
             <TextView
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:fontFamily="@font/poppins_regular"
+                android:gravity="center"
                 android:text="Spin Chance :"
                 android:textColor="@color/textColor"
-                android:textSize="16sp"
                 android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/spinChance"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
                 android:layout_marginStart="3dp"
-                android:fontFamily="@font/poppins_bold"
+                android:fontFamily="@font/poppins_regular"
+                android:textStyle="bold"
                 android:paddingTop="2dp"
                 android:text="0"
-                android:textColor="@color/textColor"
-                android:textSize="16sp" />
+                android:textColor="@color/textColor"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:gravity="end">
 
                 <TextView
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:fontFamily="@font/poppins_regular"
-                    android:gravity="end"
+                    android:gravity="center|end"
                     android:text="Coins :"
                     android:textColor="@color/textColor"
-                    android:textSize="16sp"
                     android:textStyle="bold" />
 
                 <ImageView
                     android:id="@+id/iconCoinWithdrawal"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="2dp"
-                    android:layout_marginTop="2dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="3dp"
                     android:src="@drawable/ic_coin" />
 
                 <TextView
                     android:id="@+id/textCoinWithdrawal"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
+                    android:paddingTop="5dp"
+                    android:gravity="center"
                     android:layout_marginStart="3dp"
-                    android:fontFamily="@font/poppins_bold"
-                    android:paddingTop="2dp"
+                    android:fontFamily="@font/poppins_regular"
                     android:text="0"
                     android:textColor="@color/textColorCoin"
-                    android:textSize="16sp"
                     android:textStyle="bold" />
 
 
@@ -138,7 +138,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="15dp"
                 android:layout_weight="1"
-                android:fontFamily="@font/poppins_bold"
+                android:fontFamily="@font/poppins_regular"
                 android:text="Personal Information"
                 android:textColor="@color/textColor"
                 android:textSize="16sp" />
@@ -160,8 +160,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:paddingBottom="10dp"
-            android:visibility="gone">
+            android:visibility="gone"
+            android:paddingBottom="10dp">
 
             <LinearLayout
                 android:id="@+id/linearLayout2"
@@ -180,18 +180,15 @@
                     android:fontFamily="@font/poppins_light"
                     android:text="Name:"
                     android:textColor="@color/textColor"
-                    android:textSize="16sp"
                     android:textStyle="bold" />
 
                 <TextView
                     android:id="@+id/tvName"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="15dp"
-                    android:fontFamily="@font/poppins_regular"
+                    android:fontFamily="@font/poppins_bold"
                     android:text="Rider"
                     android:textColor="@color/textColor"
-                    android:textSize="16sp"
                     android:textStyle="bold" />
             </LinearLayout>
 
@@ -212,18 +209,15 @@
                     android:fontFamily="@font/poppins_light"
                     android:text="Email:"
                     android:textColor="@color/textColor"
-                    android:textSize="16sp"
                     android:textStyle="bold" />
 
                 <TextView
                     android:id="@+id/tvEmail"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="15dp"
-                    android:fontFamily="@font/poppins_regular"
+                    android:fontFamily="@font/poppins_bold"
                     android:text="xxxx@gmail.com"
                     android:textColor="@color/textColor"
-                    android:textSize="16sp"
                     android:textStyle="bold" />
 
             </LinearLayout>
@@ -244,55 +238,50 @@
                     android:layout_marginStart="15dp"
                     android:fontFamily="@font/poppins_light"
                     android:text="Password:"
-                    android:textColor="@color/textColor"
-                    android:textSize="16sp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:textColor="@color/textColor" />
 
                 <TextView
                     android:id="@+id/tvPassword"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="15dp"
-                    android:fontFamily="@font/poppins_regular"
+                    android:fontFamily="@font/poppins_bold"
                     android:text="********"
                     android:textColor="@color/textColor"
-                    android:textSize="16sp"
                     android:textStyle="bold" />
 
             </LinearLayout>
 
-            <LinearLayout
-                android:id="@+id/linearLayout4"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:layout_marginHorizontal="10dp"
-                android:layout_marginTop="15dp"
-                android:background="@drawable/shape_textview"
-                android:gravity="center_vertical"
-                android:orientation="horizontal">
+        </LinearLayout>
 
-                <TextView
-                    android:layout_width="100dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="15dp"
-                    android:fontFamily="@font/poppins_light"
-                    android:text="Country:"
-                    android:textColor="@color/textColor"
-                    android:textSize="16sp"
-                    android:textStyle="bold" />
 
-                <TextView
-                    android:id="@+id/tvCountry"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="15dp"
-                    android:fontFamily="@font/poppins_regular"
-                    android:text="Not given Function"
-                    android:textColor="@color/textColor"
-                    android:textSize="16sp"
-                    android:textStyle="bold" />
+        <!--                Withdrawal                -->
+        <LinearLayout
+            android:id="@+id/llWithdrawal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/shape_textview"
+            android:gravity="center_vertical">
 
-            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/poppins_regular"
+                android:text="Withdrawal"
+                android:textColor="@color/textColor"
+                android:textSize="16sp" />
+
+            <ImageButton
+                android:id="@+id/rightArrow"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:backgroundTint="@android:color/transparent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_arrow_right" />
 
         </LinearLayout>
 
@@ -313,13 +302,12 @@
 
         <Button
             android:id="@+id/btnLogout"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="48dp"
-            android:layout_marginHorizontal="100dp"
             android:layout_marginVertical="20dp"
+            android:layout_gravity="center_horizontal"
             android:fontFamily="@font/poppins_regular"
             android:textSize="18sp"
-            android:textStyle="bold"
             android:textColor="@color/buttonTextColor"
             android:text="Logout"
             android:textAllCaps="false"
