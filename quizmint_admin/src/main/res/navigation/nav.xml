@@ -15,19 +15,28 @@
             android:id="@+id/action_homeFragment_to_subjectFragment"
             app:destination="@id/subjectFragment" />
         <action
-            android:id="@+id/action_homeFragment_to_questionFragment"
-            app:destination="@id/questionFragment" />
+            android:id="@+id/action_homeFragment_to_addQuestionFragment"
+            app:destination="@id/addQuestionFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_userListFragment"
+            app:destination="@id/userListFragment" />
+
     </fragment>
+
     <fragment
         android:id="@+id/subjectFragment"
         android:name="com.androidrider.quizmint_admin.Fragment.SubjectFragment"
         android:label="fragment_subject"
         tools:layout="@layout/fragment_subject" />
     <fragment
-        android:id="@+id/questionFragment"
-        android:name="com.androidrider.quizmint_admin.Fragment.QuestionFragment"
+        android:id="@+id/addQuestionFragment"
+        android:name="com.androidrider.quizmint_admin.Fragment.AddQuestionFragment"
         android:label="fragment_question"
-        tools:layout="@layout/fragment_question" />
-
+        tools:layout="@layout/fragment_add_question" />
+    <fragment
+        android:id="@+id/userListFragment"
+        android:name="com.androidrider.quizmint_admin.Fragment.UserListFragment"
+        android:label="fragment_user_list"
+        tools:layout="@layout/fragment_user_list" />
 
 </navigation>

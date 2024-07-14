@@ -9,10 +9,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.QuizMint">
         <activity
-            android:name=".SubjectActivity"
+            android:name=".Activity.ViewSubjectActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".Activity.QuestionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.UserDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -2,31 +2,65 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="red">#D50000</color>
-    <color name="green">#00C853</color>
 
-    <color name="mainColor">#26A69A</color>
 
-    <color name="dashboard_button_bg">#FFFFFF</color>
-    <color name="viewColor">#ff9e9e9e</color>
+    <color name="dashboard_button_bg">#FFEBEE</color>
+    <color name="toolbarColor">@color/backgroundColor2</color>
 
-    <color name="toolbarColor">@color/mainColor</color>
+
+
+
+
+
+
+    <!--    change color here-->
+    <color name="backgroundColor">@color/backgroundColor1</color>
+    <color name="backgroundColor1">#fffcf3</color>
+    <color name="backgroundColor2">#ebe8d6</color>
+    <color name="backgroundColor3">#E3F2D3</color>
+    <color name="backgroundColor4">#ebf1e6</color>
+    <color name="recyclerItemBackgroundColor">#FFEBEE</color>
+    <color name="bgSearchViewColor">@color/backgroundColor1</color>
+
+    <color name="textColorCoin">#FFAB00</color>
+    <color name="searchViewHintColor">#817E80</color>
 
     <!--    Button Color-->
-    <color name="buttonColor">#3D5AFE</color>
+    <color name="buttonTextColor">#FFFFFF</color>
+
+    <color name="buttonColor">@color/buttonColor4</color>
+    <color name="buttonColor1">#3D5AFE</color>
+    <color name="buttonColor2">#675496</color>
+    <color name="buttonColor3">#8f4c38</color>
+    <color name="buttonColor4">#690005</color>
+
+    <!--    Border Color-->
+    <color name="borderColor">#5CD81B60</color>
+    <color name="civ_border_color">@color/borderColor</color>
+
+    <!--    StatusBar Color-->
+    <color name="statusBarColor">@color/toolbarColor</color>
 
     <!--    Text Color-->
     <color name="textColor">#000000</color>
-
-    <color name="textColorSplash">#FFFFFFFF</color>
+    <color name="textColorSplash">#000000</color>
+    <color name="textColorSignIn">#000000</color>
+    <color name="textColorSignUp">#000000</color>
     <color name="textColorHomeRecyclerSubject">#000000</color>
     <color name="textColorHistoryRecyclerSubject">#000000</color>
-    <color name="textColorLogoutButton">#FFFFFFFF</color>
 
-    <!--    StatusBar Color-->
-    <color name="statusBarColor">#D50000</color>
 
-    <color name="redColor">#FF0000</color>
-    <color name="greenColor">#00FF00</color>
+
+    <color name="redColor">#D32F2F</color>
+    <color name="greenColor">#388E3C</color>
     <color name="default_option_color">#FFFFFFFF</color>
+
+    <!--    ***************************************************-->
+
+    <color name="historyGreenColor">#44da54</color>
+    <color name="historyRedColor">#d54141</color>
+    <color name="winMessageGreenTextColor">#44da54</color>
+    <color name="lostMessageRedTextColor">#d54141</color>
+
+
 </resources>

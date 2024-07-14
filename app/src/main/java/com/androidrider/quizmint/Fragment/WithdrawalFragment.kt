@@ -116,7 +116,6 @@ class WithdrawalFragment : BottomSheetDialogFragment() {
                 btnOk.setOnClickListener {
                     dialog.dismiss()
                 }
-
                 dialog.show()
 
                 binding.edtAmount.text.clear()

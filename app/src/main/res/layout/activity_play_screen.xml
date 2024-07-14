@@ -131,7 +131,7 @@
                 android:id="@+id/tvQuestion"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
+                android:layout_gravity="center"
                 android:fontFamily="@font/poppins_bold"
                 android:gravity="center"
                 android:paddingHorizontal="8dp"

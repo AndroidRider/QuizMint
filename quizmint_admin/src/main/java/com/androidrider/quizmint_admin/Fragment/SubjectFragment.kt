@@ -15,7 +15,7 @@ import androidx.activity.result.contract.ActivityResultContracts
 import androidx.core.content.res.ResourcesCompat
 import com.androidrider.quizmint_admin.Model.SubjectModel
 import com.androidrider.quizmint_admin.R
-import com.androidrider.quizmint_admin.SubjectAdapter
+import com.androidrider.quizmint_admin.Adapter.SubjectAdapter
 import com.androidrider.quizmint_admin.databinding.FragmentSubjectBinding
 import com.google.android.material.appbar.MaterialToolbar
 import com.google.firebase.firestore.ktx.firestore
@@ -51,7 +51,7 @@ class SubjectFragment : Fragment() {
         toolbar.visibility = GONE
 
         dialog = Dialog(requireContext())
-        dialog.setContentView(R.layout.progress_layout)
+        dialog.setContentView(R.layout.progress_loading)
         dialog.setCancelable(false)
 
         binding.apply {

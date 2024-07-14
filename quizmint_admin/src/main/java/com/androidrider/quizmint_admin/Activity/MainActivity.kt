@@ -1,4 +1,4 @@
-package com.androidrider.quizmint_admin
+package com.androidrider.quizmint_admin.Activity
 
 import android.content.Intent
 import android.os.Bundle

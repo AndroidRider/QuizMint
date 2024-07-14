@@ -19,7 +19,7 @@ class SplashActivity : AppCompatActivity() {
             val intent = Intent(this, SignInScreen::class.java)
             startActivity(intent)
             finish()
-        },500)
+        },3000)
 
 
 

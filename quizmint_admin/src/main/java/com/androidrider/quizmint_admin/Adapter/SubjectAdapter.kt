@@ -1,15 +1,23 @@
-package com.androidrider.quizmint_admin
+package com.androidrider.quizmint_admin.Adapter
 
 import android.content.Context
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.androidrider.quizmint_admin.Activity.MainActivity
+import com.androidrider.quizmint_admin.Activity.QuestionActivity
+import com.androidrider.quizmint_admin.Activity.UserDetailActivity
 import com.androidrider.quizmint_admin.Model.SubjectModel
+import com.androidrider.quizmint_admin.R
 import com.androidrider.quizmint_admin.databinding.ItemSubjectLayoutBinding
 import com.bumptech.glide.Glide
 
-class SubjectAdapter(val context: Context, val list: ArrayList<SubjectModel>) : RecyclerView.Adapter<SubjectAdapter.ViewHolder>() {
+class SubjectAdapter(
+    val context: Context,
+    val list: ArrayList<SubjectModel>) :
+    RecyclerView.Adapter<SubjectAdapter.ViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
 
@@ -24,9 +32,19 @@ class SubjectAdapter(val context: Context, val list: ArrayList<SubjectModel>) : 
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
 
+        var data=list[position]
+
         holder.binding.tvSubjectName.text = list[position].subject
 
         Glide.with(context).load(list[position].img).into(holder.binding.imgSubjectImage)
+
+        holder.itemView.setOnClickListener {
+            val intent = Intent(context, QuestionActivity::class.java).apply {
+                putExtra("subjectName", data.subject)
+            }
+            context.startActivity(intent)
+        }
+
     }
 
 
@@ -36,3 +54,4 @@ class SubjectAdapter(val context: Context, val list: ArrayList<SubjectModel>) : 
     }
 
 }
+

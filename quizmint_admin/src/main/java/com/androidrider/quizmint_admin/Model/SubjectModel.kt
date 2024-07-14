@@ -9,5 +9,6 @@ data class SubjectModel(
 data class Question(
     val questionText: String = "",
     val options: List<String> = emptyList(),
-    val correctOptionIndex: Int = -1
+    val correctOptionIndex: Int = -1,
+    var isExpanded: Boolean = false // Track the expansion state
 )

@@ -11,13 +11,13 @@ import android.widget.Toast
 import androidx.fragment.app.Fragment
 import com.androidrider.quizmint_admin.Model.Question
 import com.androidrider.quizmint_admin.R
-import com.androidrider.quizmint_admin.databinding.FragmentQuestionBinding
+import com.androidrider.quizmint_admin.databinding.FragmentAddQuestionBinding
 import com.google.android.material.appbar.MaterialToolbar
 import com.google.firebase.firestore.FirebaseFirestore
 
-class QuestionFragment : Fragment() {
+class AddQuestionFragment : Fragment() {
 
-    private lateinit var binding: FragmentQuestionBinding
+    private lateinit var binding: FragmentAddQuestionBinding
     private val db = FirebaseFirestore.getInstance()
     private val subjects = mutableListOf<String>()
     private var selectedSubject: String? = null
@@ -26,7 +26,7 @@ class QuestionFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        binding = FragmentQuestionBinding.inflate(inflater, container, false)
+        binding = FragmentAddQuestionBinding.inflate(inflater, container, false)
 
         // Access the toolbar view - Show/Hide
         val toolbar = requireActivity().findViewById<MaterialToolbar>(R.id.toolbar)
@@ -148,6 +148,6 @@ class QuestionFragment : Fragment() {
     }
 
     companion object {
-        private const val TAG = "QuestionFragment"
+        private const val TAG = "AddQuestionFragment"
     }
 }

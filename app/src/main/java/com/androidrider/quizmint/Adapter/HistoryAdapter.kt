@@ -6,7 +6,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.androidrider.quizmint.Model.HistoryModel
 import com.androidrider.quizmint.R
-import com.androidrider.quizmint.databinding.HistoryItemBinding
+import com.androidrider.quizmint.databinding.ItemHistoryBinding
 import java.sql.Timestamp
 import java.text.SimpleDateFormat
 import java.util.Calendar
@@ -19,7 +19,7 @@ class HistoryAdapter(private var historyList:ArrayList<HistoryModel>):
 
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): HistoryViewHolder {
-        return HistoryViewHolder(HistoryItemBinding.inflate(LayoutInflater.from(parent.context),parent,false))
+        return HistoryViewHolder(ItemHistoryBinding.inflate(LayoutInflater.from(parent.context),parent,false))
     }
 
     override fun getItemCount()=historyList.size
@@ -67,7 +67,7 @@ class HistoryAdapter(private var historyList:ArrayList<HistoryModel>):
 
     }
 
-    class HistoryViewHolder(var binding: HistoryItemBinding): RecyclerView.ViewHolder(binding.root) {}
+    class HistoryViewHolder(var binding: ItemHistoryBinding): RecyclerView.ViewHolder(binding.root) {}
 
     private fun isYesterday(calendar: Calendar): Boolean {
         val yesterday = Calendar.getInstance().apply {

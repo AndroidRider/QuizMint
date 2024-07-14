@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".Activity.MainActivity">
 
     <com.google.android.material.appbar.MaterialToolbar
         android:id="@+id/toolbar"
@@ -13,7 +13,8 @@
         android:layout_height="?attr/actionBarSize"
         android:background="@color/toolbarColor"
         app:title="QuizMint-Admin"
-        app:titleTextColor="@color/white"
+        app:titleCentered="true"
+        app:titleTextColor="@color/textColor"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">

@@ -3,23 +3,26 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/backgroundColor"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="10dp">
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginVertical="10dp"
+        android:layout_height="wrap_content">
 
-        <com.google.android.material.imageview.ShapeableImageView
+        <ImageView
             android:id="@+id/imgSubjectImage"
-            android:layout_width="150dp"
-            android:layout_height="100dp"
-            tools:srcCompat="@tools:sample/avatars"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center_horizontal"
             android:scaleType="centerCrop"
-            android:layout_marginHorizontal="10dp"
-            android:layout_marginTop="10dp"
-            app:shapeAppearanceOverlay="@style/SoftCorner"/>
+            android:src="@drawable/icon_kotlin"
+            android:background="@drawable/circular_border"
+            android:padding="15dp"/>
 
         <TextView
             android:id="@+id/tvSubjectName"
@@ -31,6 +34,11 @@
             android:layout_marginLeft="15dp"/>
 
     </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#E8E6E6" />
 
 
 </LinearLayout>
