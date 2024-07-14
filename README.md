@@ -3,37 +3,68 @@ QuizMint is an engaging quiz application developed using Kotlin and Firebase, de
 It offers a variety of quiz categories, robust user authentication, and real-time database features. QuizMint enhances the traditional quiz format 
 with a reward system where users can earn coins and convert them into real money.
 
+
 # Screenshot
 <p>
-  <img src="https://github.com/AndroidRider/Media-Player/assets/140700822/e1d65d96-1e31-41fe-8e16-485bed61c032.png" alt="feed example" width = "200" >
+  <img src="https://github.com/user-attachments/assets/3ad56cf5-3894-4e03-948b-18f980fab0de" alt="feed example" width = "200" >
   &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-  <img src="https://github.com/AndroidRider/Media-Player/assets/140700822/b01a934e-9cda-46fd-9d98-a613e6e694f6.png" alt="feed example" width = "200" >
+
+  <img src="https://github.com/user-attachments/assets/cb27e0b9-3071-4eea-b326-052857ab8537" alt="feed example" width = "200" >
   &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-  <img src="https://github.com/AndroidRider/Media-Player/assets/140700822/e4ec4fea-a11f-4958-9b11-9647ab64b8fd.png" alt="feed example" width = "200" >
+
+  <img src="https://github.com/user-attachments/assets/a98c29ed-757e-4a27-9383-81f020b63ef4" alt="feed example" width = "200" >
   &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-  <img src="https://github.com/AndroidRider/Media-Player/assets/140700822/b7f76134-0178-4255-977b-61a1e47803c4.png" alt="feed example" width = "200" >
+
+  <img src="https://github.com/user-attachments/assets/a89acada-0bd6-4aa1-b96a-55025bcb5bd4" alt="feed example" width = "200" >
   &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-  <img src="https://github.com/AndroidRider/Media-Player/assets/140700822/0c26d3f7-aa65-4e5c-b964-060643461f1b.png" alt="feed example" width = "200" >
+
+  <img src="https://github.com/user-attachments/assets/0f8ec000-4c74-4cda-a177-bfa8f39410f9" alt="feed example" width = "200" >
   &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-  <img src="https://github.com/AndroidRider/Media-Player/assets/140700822/30a9278f-bc3e-454b-9e9e-70118fde8e78.png" alt="feed example" width = "200" >
+
+  <img src="https://github.com/user-attachments/assets/edd12fb5-a9b4-4f45-83b4-83a47cb947bd" alt="feed example" width = "200" >
   &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-  <img src="https://github.com/AndroidRider/Media-Player/assets/140700822/77605746-c677-416a-aaab-3e2ed358e819.png" alt="feed example" width = "200" >
+
+  <img src="https://github.com/user-attachments/assets/3b824c5c-31ff-4d42-9abc-70c8f1d33cba" alt="feed example" width = "200" >
   &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-  <img src="https://github.com/AndroidRider/Media-Player/assets/140700822/84b7eeaf-5f2e-4ed2-9f90-9e0ccb2aa3be.png" alt="feed example" width = "200" >
+
+  <img src="https://github.com/user-attachments/assets/8d8a9648-ecfd-49e6-99aa-534280ec1bae" alt="feed example" width = "200" >
   &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-  <img src="https://github.com/AndroidRider/Media-Player/assets/140700822/6b398b6d-f179-433b-9e7d-e3847ac8aa49.png" alt="feed example" width = "200" >
+
+  <img src="https://github.com/user-attachments/assets/8122d701-501a-415a-a453-b68b4d2412e6" alt="feed example" width = "200" >
   &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-  <img src="https://github.com/AndroidRider/Media-Player/assets/140700822/aa39ce38-befa-4286-bafd-d58f07520578.png" alt="feed example" width = "200" >
+
+  <img src="https://github.com/user-attachments/assets/d541a07f-6e22-4c10-bdc7-d4ef4fa843cc" alt="feed example" width = "200" >
   &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-  <img src="https://github.com/AndroidRider/Media-Player/assets/140700822/0972930c-f7de-466c-87e9-2673676719e2.png" alt="feed example" width = "200" >
+
+  <img src="https://github.com/user-attachments/assets/4a78755d-f313-4e5d-98b3-5e5999b60d62" alt="feed example" width = "200" >
   &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-  <img src="https://github.com/AndroidRider/Media-Player/assets/140700822/2f4860cc-36a3-4b42-9a7d-e5317228122b.png" alt="feed example" width = "200" >
+
+  <img src="https://github.com/user-attachments/assets/c5f2fde5-77af-41bc-9bfb-23d165e8b982" alt="feed example" width = "200" >
   &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-  <img src="https://github.com/AndroidRider/Media-Player/assets/140700822/cb8ff577-e4b5-47a5-abd7-d2c0c088aa6b.png" alt="feed example" width = "200" >
+
+  <img src="https://github.com/user-attachments/assets/c6569960-b769-4660-9e29-e3849652a91b" alt="feed example" width = "200" >
   &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-  <img src="https://github.com/AndroidRider/Media-Player/assets/140700822/48ad5c0d-1f5f-46bf-b5e1-55c2c79dc54f.png" alt="feed example" width = "200" >
+
+  <img src="https://github.com/user-attachments/assets/6a88aff3-a5dc-4345-b6fa-bc37b8e5c85f" alt="feed example" width = "200" >
   &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-  <img src="https://github.com/AndroidRider/Media-Player/assets/140700822/47533e98-e192-4e1b-ad4c-95973735a40e.png" alt="feed example" width = "200" >
+
+  <img src="https://github.com/user-attachments/assets/4708704b-c905-4b17-bb15-5c600f22a344" alt="feed example" width = "200" >
+  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+
+  <img src="https://github.com/user-attachments/assets/c0506af7-67cc-4cb3-90ed-9be30d43ec86" alt="feed example" width = "200" >
+  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+
+  <img src="https://github.com/user-attachments/assets/58cf5f7f-510c-4f31-b8b7-2f7365186bf2" alt="feed example" width = "200" >
+  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+
+  <img src="https://github.com/user-attachments/assets/8bfeab68-35d4-4e51-8210-8928ec5d9e07" alt="feed example" width = "200" >
+  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+
+<img src="https://github.com/user-attachments/assets/34e920e0-7be3-4669-8203-2cbc171d04e7" alt="feed example" width = "200" >
+  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+
+  <img src="https://github.com/user-attachments/assets/d8c3fa25-8809-4591-ac0b-e9e19d607b3d" alt="feed example" width = "200" >
+  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
   
 </p>
 
